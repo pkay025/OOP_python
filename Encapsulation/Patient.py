@@ -10,6 +10,10 @@ class Patient:
         return self.__patient_id
 
     @property
+    def name(self):
+        return self.__name
+
+    @property
     def age(self):
         return self.__age
 
@@ -20,9 +24,7 @@ class Patient:
         else:
             print("Invalid age")
 
-    @property
-    def name(self):
-        return self.__name
+
 
     @property
     def diagnosis(self):
