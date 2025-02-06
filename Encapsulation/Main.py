@@ -1,15 +1,13 @@
 from Encapsulation import Patient
 from Encapsulation import Doctor
 
-if __name__ == "__main__":
-    patient = Patient("P001", "John Smith", 45, "Fever")
+patient = Patient(patient_id="P001", name="John Smith", age=45, diagnosis="Fever")
 
-    doctor = Doctor("D101", "Dr. Alice", "General Medicine")
+doctor = Doctor(doctor_id="D101", name="Dr. Alice", specialization="General Medicine")
 
-    
-    patient.update_diagnosis("Flu")
-    
-    doctor.treat_patient(patient)
+patient.diagnosis = "Flu"
+
+doctor.treat_patient(patient)
 
 
 
